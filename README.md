@@ -7,7 +7,7 @@ Coffee CHl is a coffee shop website created as a student web development project
 
 🌐 Live Demo
 
-Visit the website: Coming soon!
+Visit the website: (https://vtuskoav-lab.github.io/coffee-chl/)
 
 ✨ Features
 
