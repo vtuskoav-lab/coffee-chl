@@ -41,6 +41,11 @@ nav a:hover {
 #about {
     padding: 100px 7%;
     min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 7%;
 }
 
 #about h1 {
@@ -88,30 +93,10 @@ nav a:hover {
     color: white;
     scale: 120%;
 }
-#about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    padding: 70px 7%;
-    min-height: 600px;
-}
+
 
 .about-text {
     flex: 1;
-}
-
-#about h1 {
-    font-size: 64px;
-    line-height: 1.15;
-    margin-bottom: 25px;
-}
-
-#about h5 {
-    color: #6D5C54;
-    font-size: 18px;
-    font-weight: normal;
-    margin-bottom: 35px;
 }
 
 .coffee-image {
@@ -176,4 +161,70 @@ footer {
 .footer-bottom p {
     color: #BCAAA1;
     font-size: 12px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    header h3 {
+        font-size: 22px;
+    }
+
+    nav {
+        float: none;
+        padding-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    #about {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+        padding: 40px 5%;
+        min-height: auto;
+    }
+
+    #about h1 {
+        font-size: 40px;
+    }
+
+    #about h5 {
+        font-size: 16px;
+    }
+
+    .coffee-image {
+        width: 100%;
+        max-width: none;
+        height: 300px;
+    }
+
+    footer {
+        padding: 35px 5% 20px;
+    }
+
+    .footer-main {
+        gap: 25px;
+    }
+
+    .footer-brand,
+    .footer-contacts,
+    .footer-hours,
+    .footer-location {
+        flex: 1 1 40%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
